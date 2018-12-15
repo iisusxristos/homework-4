@@ -1,0 +1,97 @@
+body {
+	display:flex;
+	justify-content:center;
+	margin:0;
+	padding: 0;
+}
+.all {
+	display: flex;
+	flex-basis: 70%;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content:space-between;
+	text-align: center;
+}
+.logo {
+	background:red;
+	height: 120px;
+	flex-basis: 39%;
+}
+.menu {
+	background:orange;
+	height: 120px;
+	flex-basis: 59%;
+}
+.text {
+	background: green;
+	flex-basis: 100%;
+	height: 400px;
+	margin: 15px 0 15px 0;
+}
+.itog1 {
+	background:brown;
+	flex-basis: 32%;
+	height: 150px;
+	
+}
+.itog2 {
+	background: blue;
+	flex-basis: 32%;
+	height: 150px;
+}
+.itog3 {
+	background: violet;
+	flex-basis: 32%;
+	height: 150px;
+}
+@media (max-width: 1080px){
+	.logo {
+		flex-basis: 100%;
+		height: 400px;
+		order:3;
+		margin: 15px 0 15px 0;
+	}
+	.menu {
+		flex-basis: 39%;
+		order:1;
+	}
+	.text {
+		flex-basis: 59%;
+		height: 120px;
+		order:2;
+		margin:0;
+	}
+	.itog1 {
+		display:none;
+	}
+	.itog2 {
+		flex-basis: 49%;
+		order:4;
+	}
+	.itog3 {
+		flex-basis: 49%;
+		order:5;
+	}
+}
+@media (max-width: 480px){
+	.menu, .itog1, .itog2 {
+		display:none;
+	}
+	.logo {
+		flex-basis: 100%;
+		height: 250px;
+		order:3;
+	}
+	.text {
+		flex-basis: 100%;
+		height: 120px;
+		order:1;
+		margin-bottom: 15px;
+	}
+	.itog3 {
+		flex-basis: 100%;
+		height: 120px;
+		order:2;
+	}
+
+}

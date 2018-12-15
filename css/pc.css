@@ -1,0 +1,54 @@
+@import url(tel.css) (max-width: 480px);
+@media (min-width: 480px){
+body {
+	position: absolute;
+	top: 0;
+	bottom:0;
+	width: 100%;
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content:space-between;
+}
+.header, .container, .footer {
+	flex-basis:70%;
+	padding:20px;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+}
+.header {
+	background: grey;
+	border-radius: 0 0 10px 10px;
+}
+.container {
+	background: blue;
+	border-radius: 10px;
+	height: 400px;
+}
+.footer {
+	background: grey;
+	border-radius: 10px 10px 0 0;
+}
+.adapt {
+	background:darkblue;
+	width:200px;
+	border-radius: 5px;
+	text-align: center;
+}
+p {
+	color:red;
+}
+h1, h2 {
+	text-decoration: underline;
+	margin:0;
+}
+h4 {
+	margin:0;
+	padding:0;
+}
+}
